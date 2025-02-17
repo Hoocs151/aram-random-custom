@@ -25,19 +25,22 @@ const Page: React.FC<Props> = ({ params }) => {
   const right = pool.slice(Math.floor(poolSize / 2));
 
   return (
-    <main className="container mx-auto flex min-h-screen w-full items-center justify-center p-8">
-      <div className="flex flex-col items-center">
-        <h2 className="text-2xl font-bold text-white mb-4">Team 1</h2>
-        <ChampionGrid champions={left} />
-      </div>
-      <div className="mx-8 flex flex-col items-center justify-center gap-4">
-        <Link href={`/${generateSeed()}`} className="btn btn-outline btn-sm">
-          Regenerate
-        </Link>
-      </div>
-      <div className="flex flex-col items-center">
-        <h2 className="text-2xl font-bold text-white mb-4">Team 2</h2>
-        <ChampionGrid champions={right} rtl />
+    <main className="container mx-auto flex flex-col min-h-screen w-full items-center justify-center p-8">
+      <h1 className="text-3xl font-bold text-yellow-500 mb-8 text-center">lilwang ng...</h1>
+      <div className="flex w-full items-center justify-center">
+        <div className="flex flex-col items-center">
+          <h2 className="text-2xl font-bold text-white mb-4">Team 1</h2>
+          <ChampionGrid champions={left} />
+        </div>
+        <div className="mx-8 flex flex-col items-center justify-center gap-4">
+          <Link href={`/${generateSeed()}`} className="btn btn-outline btn-sm">
+            Regenerate
+          </Link>
+        </div>
+        <div className="flex flex-col items-center">
+          <h2 className="text-2xl font-bold text-white mb-4">Team 2</h2>
+          <ChampionGrid champions={right} rtl />
+        </div>
       </div>
     </main>
   );
