@@ -1,0 +1,202 @@
+[
+  {
+    "id": "Aatrox",
+    "key": "266",
+    "name": "Aatrox",
+    "title": "the Darkin Blade",
+    "blurb": "A fallen defender of Shurima returned as a living weapon.",
+    "info": { "attack": 8, "defense": 4, "magic": 3, "difficulty": 4 },
+    "image": { "full": "Aatrox.png", "sprite": "champion0.png", "group": "champion", "x": 0, "y": 0, "w": 48, "h": 48 },
+    "tags": ["Fighter", "Tank"]
+  },
+  {
+    "id": "Ahri",
+    "key": "103",
+    "name": "Ahri",
+    "title": "the Nine-Tailed Fox",
+    "blurb": "A vastaya who can manipulate emotions and consume souls.",
+    "info": { "attack": 3, "defense": 4, "magic": 8, "difficulty": 5 },
+    "image": { "full": "Ahri.png", "sprite": "champion0.png", "group": "champion", "x": 48, "y": 0, "w": 48, "h": 48 },
+    "tags": ["Mage", "Assassin"]
+  },
+  {
+    "id": "Akali",
+    "key": "84",
+    "name": "Akali",
+    "title": "the Rogue Assassin",
+    "blurb": "A rogue assassin striking from the shadows.",
+    "info": { "attack": 5, "defense": 3, "magic": 8, "difficulty": 7 },
+    "image": { "full": "Akali.png", "sprite": "champion0.png", "group": "champion", "x": 96, "y": 0, "w": 48, "h": 48 },
+    "tags": ["Assassin"]
+  },
+  {
+    "id": "Alistar",
+    "key": "12",
+    "name": "Alistar",
+    "title": "the Minotaur",
+    "blurb": "A mighty warrior who protects the downtrodden.",
+    "info": { "attack": 6, "defense": 9, "magic": 5, "difficulty": 7 },
+    "image": { "full": "Alistar.png", "sprite": "champion0.png", "group": "champion", "x": 144, "y": 0, "w": 48, "h": 48 },
+    "tags": ["Tank", "Support"]
+  },
+  {
+    "id": "Amumu",
+    "key": "32",
+    "name": "Amumu",
+    "title": "the Sad Mummy",
+    "blurb": "A lonely soul forever searching for a friend.",
+    "info": { "attack": 2, "defense": 6, "magic": 8, "difficulty": 3 },
+    "image": { "full": "Amumu.png", "sprite": "champion0.png", "group": "champion", "x": 192, "y": 0, "w": 48, "h": 48 },
+    "tags": ["Tank", "Mage"]
+  },
+  {
+    "id": "Annie",
+    "key": "1",
+    "name": "Annie",
+    "title": "the Dark Child",
+    "blurb": "A child with destructive pyromantic powers.",
+    "info": { "attack": 2, "defense": 3, "magic": 10, "difficulty": 6 },
+    "image": { "full": "Annie.png", "sprite": "champion0.png", "group": "champion", "x": 240, "y": 0, "w": 48, "h": 48 },
+    "tags": ["Mage"]
+  },
+  {
+    "id": "Ashe",
+    "key": "22",
+    "name": "Ashe",
+    "title": "the Frost Archer",
+    "blurb": "A stoic iceborn Warmother leading the Freljord.",
+    "info": { "attack": 7, "defense": 3, "magic": 2, "difficulty": 4 },
+    "image": { "full": "Ashe.png", "sprite": "champion0.png", "group": "champion", "x": 288, "y": 0, "w": 48, "h": 48 },
+    "tags": ["Marksman", "Support"]
+  },
+  {
+    "id": "Braum",
+    "key": "201",
+    "name": "Braum",
+    "title": "the Heart of the Freljord",
+    "blurb": "A beloved hero armed with an enchanted door.",
+    "info": { "attack": 3, "defense": 8, "magic": 4, "difficulty": 5 },
+    "image": { "full": "Braum.png", "sprite": "champion1.png", "group": "champion", "x": 0, "y": 0, "w": 48, "h": 48 },
+    "tags": ["Support", "Tank"]
+  },
+  {
+    "id": "Caitlyn",
+    "key": "51",
+    "name": "Caitlyn",
+    "title": "the Sheriff of Piltover",
+    "blurb": "Piltover's best shot and most cunning sheriff.",
+    "info": { "attack": 8, "defense": 2, "magic": 2, "difficulty": 4 },
+    "image": { "full": "Caitlyn.png", "sprite": "champion1.png", "group": "champion", "x": 48, "y": 0, "w": 48, "h": 48 },
+    "tags": ["Marksman"]
+  },
+  {
+    "id": "Darius",
+    "key": "122",
+    "name": "Darius",
+    "title": "the Hand of Noxus",
+    "blurb": "Noxus' most feared and respected commander.",
+    "info": { "attack": 9, "defense": 5, "magic": 1, "difficulty": 2 },
+    "image": { "full": "Darius.png", "sprite": "champion1.png", "group": "champion", "x": 96, "y": 0, "w": 48, "h": 48 },
+    "tags": ["Fighter", "Tank"]
+  },
+  {
+    "id": "Ezreal",
+    "key": "81",
+    "name": "Ezreal",
+    "title": "the Prodigal Explorer",
+    "blurb": "A daring adventurer with arcane gauntlets.",
+    "info": { "attack": 7, "defense": 2, "magic": 6, "difficulty": 7 },
+    "image": { "full": "Ezreal.png", "sprite": "champion1.png", "group": "champion", "x": 144, "y": 0, "w": 48, "h": 48 },
+    "tags": ["Marksman", "Mage"]
+  },
+  {
+    "id": "Garen",
+    "key": "86",
+    "name": "Garen",
+    "title": "The Might of Demacia",
+    "blurb": "A proud warrior of Demacia's elite Dauntless Vanguard.",
+    "info": { "attack": 7, "defense": 7, "magic": 1, "difficulty": 2 },
+    "image": { "full": "Garen.png", "sprite": "champion1.png", "group": "champion", "x": 192, "y": 0, "w": 48, "h": 48 },
+    "tags": ["Fighter", "Tank"]
+  },
+  {
+    "id": "Jinx",
+    "key": "222",
+    "name": "Jinx",
+    "title": "the Loose Cannon",
+    "blurb": "A manic and impulsive criminal from Zaun.",
+    "info": { "attack": 9, "defense": 2, "magic": 4, "difficulty": 6 },
+    "image": { "full": "Jinx.png", "sprite": "champion1.png", "group": "champion", "x": 240, "y": 0, "w": 48, "h": 48 },
+    "tags": ["Marksman"]
+  },
+  {
+    "id": "Katarina",
+    "key": "55",
+    "name": "Katarina",
+    "title": "the Sinister Blade",
+    "blurb": "A Noxian assassin of the highest caliber.",
+    "info": { "attack": 4, "defense": 3, "magic": 9, "difficulty": 8 },
+    "image": { "full": "Katarina.png", "sprite": "champion1.png", "group": "champion", "x": 288, "y": 0, "w": 48, "h": 48 },
+    "tags": ["Assassin", "Mage"]
+  },
+  {
+    "id": "Leona",
+    "key": "89",
+    "name": "Leona",
+    "title": "the Radiant Dawn",
+    "blurb": "A warrior imbued with the power of the sun.",
+    "info": { "attack": 4, "defense": 8, "magic": 3, "difficulty": 4 },
+    "image": { "full": "Leona.png", "sprite": "champion2.png", "group": "champion", "x": 0, "y": 0, "w": 48, "h": 48 },
+    "tags": ["Tank", "Support"]
+  },
+  {
+    "id": "Lux",
+    "key": "99",
+    "name": "Lux",
+    "title": "the Lady of Luminosity",
+    "blurb": "A light mage of Demacia with boundless optimism.",
+    "info": { "attack": 2, "defense": 4, "magic": 9, "difficulty": 5 },
+    "image": { "full": "Lux.png", "sprite": "champion2.png", "group": "champion", "x": 48, "y": 0, "w": 48, "h": 48 },
+    "tags": ["Mage", "Support"]
+  },
+  {
+    "id": "Morgana",
+    "key": "25",
+    "name": "Morgana",
+    "title": "the Fallen",
+    "blurb": "A fallen angel fighting for justice from the shadows.",
+    "info": { "attack": 2, "defense": 6, "magic": 8, "difficulty": 4 },
+    "image": { "full": "Morgana.png", "sprite": "champion2.png", "group": "champion", "x": 96, "y": 0, "w": 48, "h": 48 },
+    "tags": ["Mage", "Support"]
+  },
+  {
+    "id": "Nami",
+    "key": "267",
+    "name": "Nami",
+    "title": "the Tidecaller",
+    "blurb": "A vastaya support wielding the power of the seas.",
+    "info": { "attack": 4, "defense": 3, "magic": 7, "difficulty": 5 },
+    "image": { "full": "Nami.png", "sprite": "champion2.png", "group": "champion", "x": 144, "y": 0, "w": 48, "h": 48 },
+    "tags": ["Support", "Mage"]
+  },
+  {
+    "id": "Riven",
+    "key": "92",
+    "name": "Riven",
+    "title": "the Exile",
+    "blurb": "A swordmaster seeking redemption for her past.",
+    "info": { "attack": 8, "defense": 5, "magic": 1, "difficulty": 8 },
+    "image": { "full": "Riven.png", "sprite": "champion2.png", "group": "champion", "x": 192, "y": 0, "w": 48, "h": 48 },
+    "tags": ["Fighter", "Assassin"]
+  },
+  {
+    "id": "Thresh",
+    "key": "412",
+    "name": "Thresh",
+    "title": "the Chain Warden",
+    "blurb": "A sadistic specter who harvests the souls of the living.",
+    "info": { "attack": 5, "defense": 6, "magic": 6, "difficulty": 7 },
+    "image": { "full": "Thresh.png", "sprite": "champion2.png", "group": "champion", "x": 240, "y": 0, "w": 48, "h": 48 },
+    "tags": ["Support", "Fighter"]
+  }
+]
