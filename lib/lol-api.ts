@@ -1,8 +1,11 @@
-export const CHAMPION_ENDPOINT =
-  'https://ddragon.leagueoflegends.com/cdn/13.19.1/data/en_US/champion.json';
+import staticChampionData from './static-champions.json';
 
-export const CHAMPION_IMAGE_ENDPOINT =
-  'https://ddragon.leagueoflegends.com/cdn/13.19.1/img/champion';
+const PATCH_VERSION = '13.19.1';
+const BASE_ENDPOINT = `https://ddragon.leagueoflegends.com/cdn/${PATCH_VERSION}`;
+
+export const CHAMPION_ENDPOINT = `${BASE_ENDPOINT}/data/en_US/champion.json`;
+
+export const CHAMPION_IMAGE_ENDPOINT = `${BASE_ENDPOINT}/img/champion`;
 
 export type Champion = {
   id: string;
@@ -25,21 +28,50 @@ export type Champion = {
     w: number;
     h: number;
   };
-  tags: number[];
+  tags: string[];
 };
+
+const FALLBACK_CHAMPIONS = staticChampionData as Champion[];
 
 let cache: Champion[] | undefined = undefined;
 
 export const fetchChampions = async (): Promise<Champion[]> => {
-  if (!cache) {
-    console.log('Populating cache');
-    const response = await fetch(CHAMPION_ENDPOINT);
-    const data = await response.json();
+  if (cache) {
+    return cache;
+  }
 
-    const champions = Object.values(data.data) as Champion[];
+  console.log('Populating cache');
+
+  try {
+    const response = await fetch(CHAMPION_ENDPOINT, {
+      // Ensure the data is always fresh while still allowing Next.js to cache the response for the request lifecycle.
+      cache: 'no-store',
+    });
+
+    if (!response.ok) {
+      throw new Error(`Failed to fetch champions: ${response.statusText}`);
+    }
+
+    type ChampionResponse = {
+      data: Record<string, Champion>;
+    };
+
+    const data = (await response.json()) as ChampionResponse;
+
+    const champions = Object.values(data.data).sort((a, b) =>
+      a.name.localeCompare(b.name),
+    );
 
     cache = champions;
+  } catch (error) {
+    console.error('Falling back to bundled champion data', error);
+    cache = [...FALLBACK_CHAMPIONS].sort((a, b) =>
+      a.name.localeCompare(b.name),
+    );
   }
 
   return cache;
 };
+
+export const getChampionImageUrl = (champion: Pick<Champion, 'image'>): string =>
+  `${CHAMPION_IMAGE_ENDPOINT}/${champion.image.full}`;
